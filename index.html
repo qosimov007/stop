@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo'l harakati belgilarini o'rganish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yo'l harakati belgilarini o'rganish</h1>
+        
+        <!-- Yo'l belgilarini tanlash uchun dropdown -->
+        <label for="signs">Yo'l belgisini tanlang:</label>
+        <select id="signs" onchange="showSignInfo()">
+            <option value="">Tanlang...</option>
+            <option value="Stop">Stop</option>
+            <option value="Yield">Yield</option>
+            <option value="Pedestrian Crossing">Piyodalar o'tish joyi</option>
+        </select>
+
+        <!-- Belgilar haqida ma'lumot ko'rsatiladigan bo'lim -->
+        <div id="sign-info">
+            <h2>Belgi haqida ma'lumot</h2>
+            <p id="info-text">Bu yerda tanlangan yo'l belgisining ma'lumotlari paydo bo'ladi.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
